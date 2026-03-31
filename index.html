@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Ashra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="page-shell">
+    <section class="hero-card" id="heroCard">
+      <p class="eyebrow">A little page for Ashra</p>
+      <h1>Wait... before I say something serious, answer a few silly questions first.</h1>
+      <p class="hero-copy">
+        This starts funny on purpose, because making you smile has become one of my favorite things in the world.
+      </p>
+      <button class="primary-btn" id="startBtn">Start the questions</button>
+    </section>
+
+    <section class="question-card hidden" id="questionCard">
+      <div class="question-progress">
+        <span id="progressText">Question 1 of 6</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <p class="question-tag">Cute questions only</p>
+      <h2 id="questionText"></h2>
+      <p class="question-note" id="questionNote"></p>
+
+      <div class="options" id="optionsWrap"></div>
+    </section>
+
+    <section class="reveal-card hidden" id="revealCard">
+      <p class="eyebrow">Our little story</p>
+      <h2>These moments mean more to me than I can explain.</h2>
+      <p class="section-copy">
+        Some photos are just photos. Ours feel like pieces of my heart. Every smile, every shy look, every random second with you became something I wanted to keep.
+      </p>
+
+      <div class="memory-intro">
+        <div class="memory-stat">
+          <strong>1 beautiful story</strong>
+          <span>made from simple moments, smiles, and feelings that kept growing.</span>
+        </div>
+        <div class="memory-stat">
+          <strong>2 special videos</strong>
+          <span>because some feelings are too alive to fit inside a still photo.</span>
+        </div>
+      </div>
+
+      <section class="feature-memory">
+        <div class="feature-copy">
+          <p class="memory-label">A feeling I keep replaying</p>
+          <h3>Every time I look at us, I see comfort, laughter, and something real.</h3>
+          <p>
+            I see the way your smile changes the whole mood around me. I see the way even a normal place starts feeling special when you are there. I see memories that I never want to lose.
+          </p>
+        </div>
+        <div class="feature-visual">
+          <img src="IMG_2743.JPG" alt="A special memory of us together">
+        </div>
+      </section>
+
+      <section class="video-story">
+        <div class="video-card">
+          <p class="memory-label">Memory video one</p>
+          <video autoplay muted loop controls poster="IMG_2712.JPG">
+            <source src="IMG_2742.mp4" type="video/mp4">
+          </video>
+          <p class="video-note">A moving memory that still makes my heart stop for a second.</p>
+        </div>
+
+        <div class="video-card">
+          <p class="memory-label">Memory video two</p>
+          <video autoplay muted loop controls poster="IMG_2755.JPG">
+            <source src="IMG_2699.mp4" type="video/mp4">
+          </video>
+          <p class="video-note">One more little moment I know I will remember for a very long time.</p>
+        </div>
+      </section>
+
+      <section class="memory-grid" id="memoryGrid"></section>
+
+      <div class="soft-note">
+        <p id="softNoteText"></p>
+      </div>
+
+      <button class="primary-btn" id="proposalBtn">Read what my heart wants to say</button>
+    </section>
+
+    <section class="proposal-card hidden" id="proposalCard">
+      <p class="eyebrow">For you, Ashra</p>
+      <h2>The truth I have been carrying in my heart</h2>
+
+      <div class="letter">
+        <p>My dearest Ashra,</p>
+        <p>
+          I made this page with jokes first, because that is how you live in my heart. You bring lightness. You bring laughter. You make things feel easy and beautiful. But behind every silly question here, there was one honest feeling waiting quietly for its turn.
+        </p>
+        <p>
+          The truth is that you have become deeply important to me. More than a passing thought. More than a small crush. More than a moment. Somewhere between our smiles, our conversations, our shy looks, and the way time felt softer around you, my heart chose you.
+        </p>
+        <p>
+          When I look at these memories, I do not just see pictures. I see the way your presence changed my day. I see comfort. I see warmth. I see the kind of feeling that stays after the moment is gone. You have this beautiful way of making everything feel gentle and alive at the same time.
+        </p>
+        <p>
+          I love the happiness in your smile. I love the sweetness in your expressions. I love the quiet little moments where you are not even trying, yet you become the most beautiful part of everything around you. I love how naturally my heart moves toward you.
+        </p>
+        <p>
+          If life gives us ordinary days, I want to share them with you. If life gives us hard days, I want to stand beside you through them. If life gives us beautiful days, I want to make even more memories with you. I want to be there for the laughter, the comfort, the care, the calm, the chaos, and all the little things in between.
+        </p>
+        <p>
+          I do not want to keep this in silence anymore. I want to tell you clearly, gently, and with all my heart that what I feel for you is real. It is soft, serious, hopeful, and full of love.
+        </p>
+        <p>
+          So today, with every memory behind me and every hope in front of me, I want to ask you the most important question I could ever ask.
+        </p>
+        <p class="big-line">Ashra, will you be mine?</p>
+      </div>
+
+      <div class="proposal-actions">
+        <button class="yes-btn" id="yesBtn">Yes, forever</button>
+        <button class="shy-btn" id="shyBtn">Give me one shy moment</button>
+      </div>
+
+      <p class="response-text hidden" id="responseText"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
